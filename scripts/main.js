@@ -2,10 +2,14 @@
   'use strict';
 
   $(document).ready(function(){
-    $('body').prepend(JST['application']());
+    $(subCategories)
 
-    
+  $(".subCategories").hide();
 
+  $('.headers').click(function(){
+    $(".subCategories").siblings(".subCategories").slideUp(400,function(){});
+    $(this).next().slideDown(400,function(){});
+  });
 
 
 

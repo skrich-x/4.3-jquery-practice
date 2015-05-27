@@ -19,3 +19,14 @@ body {
   background-color: $base-background-color;
   color: $base-font-color;
 }
+
+.container{
+  width: 400px;
+  border: 2px black solid;
+}
+
+h2{
+  width: 390px;
+  border: 1px double gray;
+  
+}
