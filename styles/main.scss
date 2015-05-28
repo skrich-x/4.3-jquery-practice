@@ -10,7 +10,6 @@ $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 $very-light-gray: #fafafa;
-
 $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
@@ -20,14 +19,14 @@ body {
   color: $base-font-color;
 }
 
-.container{
+.container {
   width: 400px;
-  border: 2px solid RGBA(85, 85, 85, 1) ;
+  border: 2px solid RGBA(85, 85, 85, 1);
   background-color: RGBA(172, 121, 67, .5);
 }
 
-button{
-  color: white;
+button {
+  color: RGBA(229, 229, 229, 1);
   border: 1px;
   width: 100%;
   text-decoration: none;
@@ -35,7 +34,20 @@ button{
   border: 1px double RGBA(85, 85, 85, .75);
 }
 
-.subCategories{
-  color:RGBA(93, 69, 43, 1);
+button:hover {
+  background-color: RGBA(43, 110, 156, 1);
+  color: white;
+}
 
+button::after {
+  content: "";
+  border-bottom-color: $dark-gray;
+}
+
+.headers i {
+  padding-right: 15px;
+}
+
+.subCategories {
+  color: RGBA(93, 69, 43, 1);
 }
