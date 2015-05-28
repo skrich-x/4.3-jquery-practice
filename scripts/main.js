@@ -2,6 +2,13 @@
   'use strict';
 
   $(document).ready(function(){
-    $('body').prepend(JST['application']());
+  $(".subCategories").hide();
+
+});
+
+  $('.headers').click(function(){
+    $(".subCategories").siblings(".subCategories").slideToggle(350,function(){});
+    $(this).next().slideToggle(350,function(){});
   });
+
 })();
